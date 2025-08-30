@@ -2,6 +2,9 @@
 
 This guide explains how to achieve deep operator-level monitoring of CUDA kernels and GPU operations with your enhanced nvitop system.
 
+![Kernel Monitor Interface](captures/option_5.png)
+*Advanced Kernel Monitor showing CUDA operations, process breakdown, and memory tracking in real-time*
+
 ## 📊 Current Kernel Monitoring Capabilities
 
 ### ⚡ Real-Time Process Tracking

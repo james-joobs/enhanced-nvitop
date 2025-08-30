@@ -1,5 +1,8 @@
 # 🔧 NVIDIA Tools Integration Status Report
 
+![Integrated Monitor](captures/option_6.png)
+*Integrated Monitor showing all NVIDIA tools unified with 6/6 tools available and active monitoring*
+
 ## ✅ Successfully Integrated Tools
 
 ### 1. **nvidia-smi** - ✅ FULLY INTEGRATED

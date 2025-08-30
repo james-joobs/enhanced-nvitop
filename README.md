@@ -1,29 +1,34 @@
 # 🚀 Enhanced GPU & CPU Monitor
 
-A powerful, colorful, and insightful monitoring system for NVIDIA GPUs and CPU systems, built on top of nvitop with enhanced features.
+A professional-grade GPU monitoring suite with complete NVIDIA tools integration, providing real-time analytics, kernel-level tracking, and advanced profiling capabilities for RTX GPUs.
 
-## Features
+![Interactive Menu](captures/intro.png)
 
-### 🌈 Enhanced Monitor (`enhanced_monitor.py`)
-- **Real-time dashboard** with colorful Rich console output
-- **CPU monitoring** with per-core usage, temperature, and frequency
-- **GPU monitoring** with detailed memory, temperature, and power usage
-- **Memory tracking** with RAM and swap usage
-- **System information** including uptime and process count
-- **Color-coded alerts** with status indicators
+*Interactive menu showing all 7 monitoring options with beautiful Rich console interface*
 
-### 🔍 Advanced Monitor (`advanced_monitor.py`)
-- **All enhanced monitor features** plus:
-- **Alert system** with configurable thresholds
-- **Performance trends** and historical data tracking
-- **Top processes** monitoring (CPU and memory usage)
-- **Logging system** with alert history
-- **Performance reports** saved to JSON files
-- **Real-time trend analysis** with visual indicators
+## ✨ Key Features
 
-### 🎯 Original nvitop
-- Basic NVIDIA GPU monitoring using the original nvitop tool
-- Simple and lightweight
+### 🔧 Complete NVIDIA Tools Integration
+- **✅ nvidia-smi** - Process monitoring and GPU metrics
+- **✅ nsight-sys** - Kernel execution timeline profiling  
+- **✅ ncu** - Detailed kernel performance analysis
+- **✅ nvitop** - Interactive GPU monitoring (v1.5.3)
+- **✅ gpustat** - Lightweight status monitoring 
+- **✅ NVML** - Direct NVIDIA Management Library access
+
+### 🎮 Professional GPU Analytics
+- **RTX 5090 Optimized** - Perfect for latest NVIDIA GPUs
+- **Multi-GPU Support** - Individual monitoring for each GPU
+- **Kernel-Level Tracking** - CUDA operator and memory operations
+- **Real-time Profiling** - Background nsight-sys integration
+- **Power Efficiency** - Detailed power draw and thermal monitoring
+- **Process Breakdown** - Per-process GPU resource usage
+
+### 🌈 Beautiful Rich Console Interfaces
+- **7 Different Monitors** - From basic to professional-grade
+- **Color-coded Status** - Instant visual feedback (🔥 HIGH, ⚠️ MEDIUM, ✅ NORMAL)
+- **Real-time Updates** - Smooth 2-second refresh rates
+- **Interactive Menus** - Easy navigation with emoji indicators
 
 ## Installation
 
@@ -52,10 +57,16 @@ uv run python monitor.py enhanced
 # Advanced monitor with alerts
 uv run python monitor.py advanced
 
-# Dedicated GPU monitoring
+# GPU Monitor Pro (detailed GPU analytics)
 uv run python monitor.py gpu
 
-# Quick system overview
+# Kernel Monitor (CUDA operator tracking)
+uv run python monitor.py kernel
+
+# Integrated Monitor (all NVIDIA tools unified)
+uv run python monitor.py integrated
+
+# System overview (quick status check)
 uv run python monitor.py overview
 
 # Original nvitop
@@ -79,42 +90,35 @@ uv run python gpu_monitor_advanced.py
 uv run nvitop
 ```
 
-## Monitor Types
+## 📊 Monitor Types & Screenshots
 
-### 1. Enhanced Monitor
-Perfect for real-time monitoring with beautiful visuals:
-- **CPU Panel**: Per-core usage, frequency, temperature, load average
-- **Memory Panel**: RAM and swap usage with color-coded warnings
-- **GPU Panel**: Multiple GPU support with load, memory, temperature, power
-- **System Panel**: Uptime, process count, system information
-- **Auto-refresh**: Updates every 2 seconds
+### 1. 🎯 Original nvitop - Basic NVIDIA GPU monitoring
+![Original nvitop](captures/option_1.png)
+*Original nvitop interface showing RTX 5090 with GPU utilization, memory usage, temperature, and running processes*
 
-### 2. Advanced Monitor
-Ideal for long-term monitoring and analysis:
-- **Everything from Enhanced Monitor**
-- **Alert System**: Configurable thresholds for CPU, memory, GPU, disk
-- **Process Monitoring**: Top CPU and memory consuming processes
-- **Performance Trends**: Historical data with trend analysis
-- **Alert Logging**: Persistent alert history with timestamps
-- **Performance Reports**: Detailed JSON reports for analysis
+### 2. 🌈 Enhanced Monitor - Colorful real-time CPU/GPU dashboard
+![Enhanced Monitor](captures/option_2.png)
+*Beautiful Rich console interface with CPU, Memory, GPU, and System panels with color-coded status indicators*
 
-### 3. GPU Monitor Pro ⭐ NEW!
-Dedicated advanced GPU monitoring with comprehensive analytics:
-- **Detailed GPU Metrics**: Clock speeds, utilization, encoder/decoder usage
-- **Memory Analysis**: VRAM usage, memory processes, fragmentation tracking
-- **Thermal Management**: Temperature monitoring, throttling detection
-- **Power Efficiency**: Power draw, power limits, efficiency metrics
-- **Process Tracking**: GPU processes with memory usage per process
-- **Performance History**: 10-minute historical data with trend analysis
-- **Multi-GPU Support**: Individual detailed monitoring for each GPU
-- **Alert System**: GPU-specific alerts for temperature, memory, throttling
-- **Performance Reports**: Comprehensive GPU performance analytics
+### 3. 🔍 Advanced Monitor - Full monitoring with alerts & trends
+![Advanced Monitor](captures/option_3.png)
+*Comprehensive monitoring with system overview, alerts (showing CRITICAL disk alerts), performance trends, and top processes*
 
-### 4. System Overview
-Quick status check for all system components:
-- **Instant snapshot** of system health
-- **Color-coded status** indicators
-- **No continuous monitoring** - perfect for quick checks
+### 4. 🎮 GPU Monitor Pro - Dedicated advanced GPU analytics
+![GPU Monitor Pro](captures/option_4.png)
+*Professional GPU analytics with detailed RTX 5090 specifications, utilization bars, clock speeds, power consumption, and performance trends*
+
+### 5. 🔥 Kernel Monitor - CUDA kernel & operator-level tracking
+![Kernel Monitor](captures/option_5.png)
+*Advanced kernel-level monitoring showing CUDA operations, process breakdown, memory operations, and performance statistics*
+
+### 6. 🔧 Integrated Monitor - All NVIDIA tools unified
+![Integrated Monitor](captures/option_6.png)
+*Unified interface combining nvidia-smi, gpustat, nsight-sys, and ncu with profiling controls and integration status*
+
+### 7. 📊 System Overview - Quick system status check
+![System Overview](captures/option_7.png)
+*Clean system summary showing all components (CPU, Memory, GPU, Disk) with NORMAL status for RTX 5090 system*
 
 ## Alert Thresholds (Advanced Monitor)
 
